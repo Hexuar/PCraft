@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:item_frame",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData: 2220300}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ctc: {id: 'reciever', from: 'hexuar:pcraft', traits: {'block': 1b}}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.pcraft.reciever",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "pack.pcraft",
+                  "color": "blue",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{EntityTag:{Tags:[\"hpc.reciever\",\"hpc.canHaveChannel\",\"global.ignore\"],Silent:1b,Item:{id:\"minecraft:item_frame\",Count:1b,tag:{CustomModelData:2220301}},Invulnerable:1b,Invisible:1b,Fixed:1b}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

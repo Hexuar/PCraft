@@ -1,0 +1,22 @@
+   {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "   ",
+            "333",
+            "121"
+        ],
+        "key": {
+            "1": {
+                "item": "black_concrete"
+            },
+            "2": {
+                "item": "lapis_block"
+            },
+            "3": {
+                "item": "stone_button"
+            }
+            },
+        "result": {
+            "item": "knowledge_book"
+        }
+    }

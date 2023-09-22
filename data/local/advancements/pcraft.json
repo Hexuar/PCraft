@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "PCraft",
+        "description": "PC's!",
+        "icon": {
+            "item": "armor_stand",
+            "nbt": "{CustomModelData:2220317}"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "global:hexuar",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

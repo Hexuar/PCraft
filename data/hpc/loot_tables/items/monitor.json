@@ -1,0 +1,54 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:armor_stand",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData: 2220300}"
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{ctc: {id: 'monitor', from: 'hexuar:pcraft', traits: {'item': 1b, 'computer/part':1b}}}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "translate": "item.pcraft.monitor",
+                  "color": "white",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "translate": "pack.pcraft",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "translate": "text.pcraft.monitor"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{EntityTag:{Silent:1b,Small:1b,Marker:0b,Invisible:1b,Tags:[\"hpc.monitor\",\"hpc.computer\",\"hpc.canHaveChannel\",\"global.ignore\"],Pose:{Head:[358f,0f,0f]},DisabledSlots:4144959,ArmorItems:[{},{},{},{id:\"minecraft:armor_stand\",Count:1b,tag:{CustomModelData:2220300,hpc.monitor_broken:1b}}]}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
