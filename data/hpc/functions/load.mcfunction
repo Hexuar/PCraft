@@ -2,6 +2,8 @@
 
 scoreboard objectives add hpc.math dummy
 
+scoreboard objectives add hpc.tutorial_book trigger
+
 scoreboard objectives add hpc.set_password trigger
 scoreboard objectives add hpc.password trigger
 scoreboard objectives add hpc.ch_apply trigger

@@ -136,6 +136,11 @@ execute as @a[predicate=!hpc:sneaking,scores={hpc.right_click=1..},nbt={Selected
 
 ##### Triggers
 
+scoreboard players enable @a hpc.tutorial_book
+
+execute as @a[scores={hpc.tutorial_book=1..}] run function hpc:give/tutorial_book
+execute as @a[scores={hpc.tutorial_book=1..}] run scoreboard players set @s hpc.tutorial_book 0
+
 scoreboard players enable @a hpc.start_pc
 
 execute as @a[scores={hpc.start_pc=1..}] at @s as @e[sort=nearest,tag=hpc.monitor,type=armor_stand,limit=1,distance=..1.5] at @s if score @p hpc.password = @s hpc.password as @a[scores={hpc.start_pc=1..}] run function hpc:computer/start

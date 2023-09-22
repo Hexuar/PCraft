@@ -2,6 +2,8 @@ tellraw @a {"text":"[PCraft 1.4] Uninstalled!","color":"red","bold":true}
 
 scoreboard objectives remove hpc.math
 
+scoreboard objectives remove hpc.tutorial_book
+
 scoreboard objectives remove hpc.set_password
 scoreboard objectives remove hpc.password
 scoreboard objectives remove hpc.ch_apply
