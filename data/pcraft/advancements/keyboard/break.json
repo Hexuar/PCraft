@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "key": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"pcraft.key\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "pcraft:keyboard/break"
+    }
+  }
+  

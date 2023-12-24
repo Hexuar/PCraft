@@ -1,3 +1,3 @@
-execute at @s as @e[type=area_effect_cloud,tag=pcraft.key,distance=..0.8] run function pcraft:keyboard/key/kill
+execute at @s as @e[type=#pcraft:key_entities,tag=pcraft.key,distance=..0.5] run kill @s
 
 kill @s

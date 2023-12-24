@@ -5,6 +5,6 @@ $summon text_display ^$(x) ^ ^$(y) {Tags:["pcraft.key","pcraft.new1"],transforma
 $summon interaction ^$(x) ^ ^$(y) {Tags:["pcraft.key","pcraft.new1"],width:$(width),height:$(hitbox_height),response:1b}
 
 # Rotation
-execute as @e[tag=pcraft.key,tag=pcraft.new1,sort=nearest,limit=2,distance=..1] run data modify entity @s Rotation set from entity @e[type=armor_stand,tag=pcraft.spawn_keyboard,sort=nearest,limit=1,distance=..1] Rotation
+execute as @e[type=#pcraft:key_entities,tag=pcraft.key,tag=pcraft.new1,sort=nearest,limit=2,distance=..1] run data modify entity @s Rotation set from entity @e[type=armor_stand,tag=pcraft.spawn_keyboard,sort=nearest,limit=1,distance=..1] Rotation
 
 tag @e remove pcraft.new1
