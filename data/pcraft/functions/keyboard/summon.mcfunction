@@ -13,5 +13,5 @@ scoreboard players set #index pcraft.value 0
 execute positioned ^ ^0.03125 ^0.25 run function pcraft:keyboard/summon_keys
 
 # End
+kill @s[type=armor_stand]
 tag @e remove pcraft.new
-kill @s

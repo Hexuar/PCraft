@@ -1,0 +1,27 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:armor_stand",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{EntityTag:{Invisible:1b,Tags:[\"pcraft.spawn_part\",\"pcraft.spawn_monitor\"]}}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "Monitor",
+                  "italic": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
