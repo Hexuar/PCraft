@@ -1,8 +1,8 @@
 data remove entity @s interaction
 
-execute on vehicle on passengers if entity @s[type=text_display] run data modify storage pcraft:temp text set from entity @s text
-execute on vehicle on passengers if entity @s[type=text_display] run function pcraft:keyboard/key/press
-execute on vehicle on passengers if entity @s[type=item_display] run function pcraft:keyboard/key/press
+execute as @e[type=text_display,tag=pcraft.key,sort=nearest,limit=1] run data modify storage pcraft:temp text set from entity @s text
+execute as @e[type=text_display,tag=pcraft.key,sort=nearest,limit=1] run function pcraft:keyboard/key/press
+execute as @e[type=block_display,tag=pcraft.key,sort=nearest,limit=1] run function pcraft:keyboard/key/press
 
 playsound ui.button.click block @a ~ ~ ~
 

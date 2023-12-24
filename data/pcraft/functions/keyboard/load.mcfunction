@@ -8,3 +8,6 @@ scoreboard players set #KEYBOARD_Y pcraft.value -013500
 scoreboard players set #KEY_WIDTH pcraft.value 006250
 scoreboard players set #KEY_HEIGHT pcraft.value 006250
 scoreboard players set #KEY_PADDING pcraft.value 000500
+
+scoreboard players operation #KEY_HEIGHT/2 pcraft.value = #KEY_HEIGHT pcraft.value
+scoreboard players operation #KEY_HEIGHT/2 pcraft.value /= #2 pcraft.value

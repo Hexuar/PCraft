@@ -20,12 +20,6 @@ scoreboard players operation #dx pcraft.value = #width pcraft.value
 scoreboard players operation #dx pcraft.value /= #2 pcraft.value
 scoreboard players operation #x pcraft.value += #dx pcraft.value
 
-# center text
-scoreboard players operation #text_y pcraft.value = #height pcraft.value
-scoreboard players operation #text_y pcraft.value /= #2 pcraft.value
-scoreboard players operation #text_y pcraft.value += #y pcraft.value
-scoreboard players remove #text_y pcraft.value 000500
-
 # calculate hitbox size
 scoreboard players operation #dh pcraft.value = #width pcraft.value
 scoreboard players operation #dh pcraft.value /= #100 pcraft.value
@@ -35,8 +29,9 @@ scoreboard players operation #hitbox_height pcraft.value -= #dh pcraft.value
 # summon key
 execute store result storage pcraft:temp x float 0.00001 run scoreboard players get #x pcraft.value
 execute store result storage pcraft:temp y float 0.00001 run scoreboard players get #y pcraft.value
-execute store result storage pcraft:temp text_y float 0.00001 run scoreboard players get #text_y pcraft.value
 execute store result storage pcraft:temp width float 0.00001 run scoreboard players get #width pcraft.value
+execute store result storage pcraft:temp dx float 0.00001 run scoreboard players get #dx pcraft.value
+execute store result storage pcraft:temp dy float 0.00001 run scoreboard players get #KEY_HEIGHT/2 pcraft.value
 execute store result storage pcraft:temp height float 0.00001 run scoreboard players get #height pcraft.value
 execute store result storage pcraft:temp hitbox_height float 0.00001 run scoreboard players get #hitbox_height pcraft.value
 function pcraft:keyboard/key/summon with storage pcraft:temp
