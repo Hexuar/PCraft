@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-      "minecraft:redstone_lamp",
-      "minecraft:note_block",
-      "minecraft:dropper",
-      "minecraft:dispenser"
-    ]
-  }

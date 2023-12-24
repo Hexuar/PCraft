@@ -1,4 +1,0 @@
-tellraw @s ["",{"translate":"text.pcraft.separator","color":"yellow"},{"text":"\n"},{"text":"              PC","color":"gold"},{"text":" \u0020 \u0020 \u0020\n \u0020 \u0020 \u0020 \u0020 \u0020 "},{"text":"[Turn On]","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger hpc.start_pc"}},{"text":"\n             Help","color":"gray","clickEvent":{"action":"suggest_command","value":"/trigger hpc.password set (password)"},"hoverEvent":{"action":"show_text","contents":"Click this text and type in the correct password (will be the password you had selected when placing the pc by default). Then press start."}},{"text":" \u0020 \u0020 \u0020 \u0020 \u0020\n"},{"translate":"text.pcraft.separator","color":"yellow"}]
-
-
-tag @s add hpc.hasStartGui

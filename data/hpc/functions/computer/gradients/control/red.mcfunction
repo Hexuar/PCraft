@@ -1,3 +1,0 @@
-execute as @s[tag=hpc.pc,nbt=!{ArmorItems:[{},{},{},{tag:{CustomModelData:2220316}}]}] run item replace entity @s armor.head with minecraft:armor_stand{CustomModelData:2220316}
-execute as @s[tag=hpc.keyboard,nbt=!{ArmorItems:[{},{},{},{tag:{CustomModelData:2220326}}]}] run item replace entity @s armor.head with minecraft:armor_stand{CustomModelData:2220326}
-execute as @s[tag=hpc.mouse,nbt=!{ArmorItems:[{},{},{},{tag:{CustomModelData:2220336}}]}] run item replace entity @s armor.head with minecraft:armor_stand{CustomModelData:2220336}

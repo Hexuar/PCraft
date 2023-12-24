@@ -1,7 +1,0 @@
-tag @s add hpc.background_mountains
-tag @s remove hpc.background_galaxy
-tag @s remove hpc.background_forest
-tag @s remove hpc.background_lake
-tag @s remove hpc.background_smoke
-tag @s remove hpc.background_polar
-playsound minecraft:hpc.computer_click block @p ~ ~ ~
