@@ -7,8 +7,8 @@ execute unless score #index pcraft.value < #keyboardLayout.length pcraft.value r
     function pcraft:keyboard/key/get_data with storage pcraft:temp
 
     # set key size
-    scoreboard players operation #width pcraft.value = #KEY_WIDTH pcraft.value
-    scoreboard players operation #height pcraft.value = #KEY_HEIGHT pcraft.value
+    scoreboard players operation #width pcraft.value = #keyboard.key_width pcraft.value
+    scoreboard players operation #height pcraft.value = #keyboard.key_height pcraft.value
 
     scoreboard players operation #width pcraft.value *= #width_factor pcraft.value
     scoreboard players operation #height pcraft.value *= #height_factor pcraft.value
@@ -32,19 +32,19 @@ execute unless score #index pcraft.value < #keyboardLayout.length pcraft.value r
     execute store result storage pcraft:temp y float 0.00001 run scoreboard players get #y pcraft.value
     execute store result storage pcraft:temp width float 0.00001 run scoreboard players get #width pcraft.value
     execute store result storage pcraft:temp dx float 0.00001 run scoreboard players get #dx pcraft.value
-    execute store result storage pcraft:temp dy float 0.00001 run scoreboard players get #KEY_HEIGHT/2 pcraft.value
+    execute store result storage pcraft:temp dy float 0.00001 run scoreboard players get #keyboard.key_height/2 pcraft.value
     execute store result storage pcraft:temp height float 0.00001 run scoreboard players get #height pcraft.value
     execute store result storage pcraft:temp hitbox_height float 0.00001 run scoreboard players get #hitbox_height pcraft.value
     function pcraft:keyboard/key/summon with storage pcraft:temp
 
     # Add half width & padding
     scoreboard players operation #x pcraft.value += #dx pcraft.value
-    scoreboard players operation #x pcraft.value += #KEY_PADDING pcraft.value
+    scoreboard players operation #x pcraft.value += #keyboard.key_padding pcraft.value
 
     # New Line
-    execute if score #newLine pcraft.value matches 1 run scoreboard players operation #x pcraft.value = #KEYBOARD_X pcraft.value
-    execute if score #newLine pcraft.value matches 1 run scoreboard players operation #y pcraft.value += #KEY_HEIGHT pcraft.value
-    execute if score #newLine pcraft.value matches 1 run scoreboard players operation #y pcraft.value += #KEY_PADDING pcraft.value
+    execute if score #newLine pcraft.value matches 1 run scoreboard players operation #x pcraft.value = #keyboard.origin.x pcraft.value
+    execute if score #newLine pcraft.value matches 1 run scoreboard players operation #y pcraft.value += #keyboard.key_height pcraft.value
+    execute if score #newLine pcraft.value matches 1 run scoreboard players operation #y pcraft.value += #keyboard.key_padding pcraft.value
 
 
 scoreboard players add #index pcraft.value 1

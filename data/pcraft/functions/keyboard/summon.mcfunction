@@ -9,8 +9,8 @@ data modify storage pcraft:temp layout set from entity @s ArmorItems[0].tag.layo
 function pcraft:keyboard/get_data with storage pcraft:temp
 
 # Summon Keys
-scoreboard players operation #x pcraft.value = #KEYBOARD_X pcraft.value
-scoreboard players operation #y pcraft.value = #KEYBOARD_Y pcraft.value
+scoreboard players operation #x pcraft.value = #keyboard.origin.x pcraft.value
+scoreboard players operation #y pcraft.value = #keyboard.origin.y pcraft.value
 scoreboard players set #index pcraft.value 0
 execute positioned ^ ^0.03125 ^0.25 run function pcraft:keyboard/summon_keys
 
