@@ -1,3 +1,5 @@
+summon marker ^ ^ ^0.25 {Tags:["pcraft.part","pcraft.keyboard","pcraft.new"]}
+
 # Summon Keyboard
 summon block_display ^ ^ ^0.25 {Tags:["pcraft.keyboard","pcraft.new"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.43875f,0f,-0.17125f],scale:[0.8775f,0.0625f,0.3425f]}}
 data modify entity @e[type=block_display,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1,distance=..1] Rotation set from entity @s Rotation
@@ -14,4 +16,3 @@ execute positioned ^ ^0.03125 ^0.25 run function pcraft:keyboard/summon_keys
 
 # End
 kill @s[type=armor_stand]
-tag @e remove pcraft.new

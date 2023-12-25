@@ -5,13 +5,13 @@
         "conditions": {
           "entity": {
             "type": "minecraft:interaction",
-            "nbt": "{Tags:[\"pcraft.key\"]}"
+            "nbt": "{Tags:[\"pcraft.hitbox\"]}"
           }
         }
       }
     },
     "rewards": {
-      "function": "pcraft:keyboard/break"
+      "function": "pcraft:part/break"
     }
   }
   
