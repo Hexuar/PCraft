@@ -12,12 +12,8 @@ data modify storage pcraft:temp keyboardLayout set from entity @s ArmorItems[0].
 execute store result score #keyboardLayout.length pcraft.value run data get storage pcraft:temp keyboardLayout.keys
 data modify entity @e[type=block_display,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1] block_state.Name set from storage pcraft:temp keyboardLayout.color
 
-
-# Store Item Data
-data modify entity @e[type=marker,tag=pcraft.part,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1] data.ItemData set value {id:"minecraft:armor_stand",Count:1b,tag:{display:{Name:'{"text":"Keyboard","italic":false}'},EntityTag:{Invisible:1b,Tags:["pcraft.spawn_part","pcraft.spawn_keyboard"],ArmorItems:[{},{},{},{}]}}}
-data modify entity @e[type=marker,tag=pcraft.part,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1] data.ItemData.tag.display.Lore set from entity @s ArmorItems[0].tag.ItemData.Lore
-data modify entity @e[type=marker,tag=pcraft.part,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1] data.ItemData.tag.EntityTag.ArmorItems[0] set from entity @s ArmorItems[0]
-
+# Store Data
+execute as @e[type=marker,tag=pcraft.part,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1] run function pcraft:keyboard/store_data
 
 # Summon Keys
 scoreboard players operation #x pcraft.value = #keyboard.origin.x pcraft.value
