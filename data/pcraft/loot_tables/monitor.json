@@ -12,6 +12,10 @@
                 "tag": "{EntityTag:{Invisible:1b,Tags:[\"pcraft.spawn_part\",\"pcraft.spawn_monitor\"]}}"
               },
               {
+                "function": "minecraft:set_nbt",
+                "tag": "{EntityTag:{ArmorItems:[{id:\"minecraft:barrier\",Count:1b,tag:{LootTable:\"pcraft:monitor\"}},{},{},{}]}}"
+              },
+              {
                 "function": "minecraft:set_name",
                 "name": {
                   "text": "Monitor",

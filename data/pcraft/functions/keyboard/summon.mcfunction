@@ -5,7 +5,7 @@ summon block_display ^ ^ ^0.25 {Tags:["pcraft.keyboard","pcraft.new"],transforma
 data modify entity @e[type=block_display,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1,distance=..1] Rotation set from entity @s Rotation
 
 # Get Data
-data modify storage pcraft:temp layout set from entity @s ArmorItems[0].tag.layout
+data modify storage pcraft:temp KeyboardLayout set from entity @s ArmorItems[0].tag.KeyboardLayout
 function pcraft:keyboard/get_data with storage pcraft:temp
 
 # Summon Keys
@@ -13,6 +13,3 @@ scoreboard players operation #x pcraft.value = #keyboard.origin.x pcraft.value
 scoreboard players operation #y pcraft.value = #keyboard.origin.y pcraft.value
 scoreboard players set #index pcraft.value 0
 execute positioned ^ ^0.03125 ^0.25 run function pcraft:keyboard/summon_keys
-
-# End
-kill @s[type=armor_stand]

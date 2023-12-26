@@ -13,5 +13,3 @@ execute as @e[type=block_display,tag=pcraft.monitor,tag=pcraft.new,sort=nearest,
 
 # Summon Hitbox
 summon interaction ^ ^ ^-0.25 {Tags:["pcraft.hitbox","pcraft.new"],width:0.4f,height:0.2f,response:1b}
-
-kill @s[type=armor_stand]
