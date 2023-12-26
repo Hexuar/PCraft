@@ -1,7 +1,7 @@
 {
     "values": [
+        "item_display",
         "block_display",
-        "text_display",
-        "interaction"
+        "text_display"
     ]
 }

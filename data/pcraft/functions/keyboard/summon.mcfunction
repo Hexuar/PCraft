@@ -1,12 +1,23 @@
 summon marker ^ ^ ^0.25 {Tags:["pcraft.part","pcraft.keyboard","pcraft.new"]}
 
+
 # Summon Keyboard
 summon block_display ^ ^ ^0.25 {Tags:["pcraft.keyboard","pcraft.new"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.43875f,0f,-0.17125f],scale:[0.8775f,0.0625f,0.3425f]}}
 data modify entity @e[type=block_display,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1,distance=..1] Rotation set from entity @s Rotation
 
+
 # Get Data
-data modify storage pcraft:temp KeyboardLayout set from entity @s ArmorItems[0].tag.KeyboardLayout
-function pcraft:keyboard/get_data with storage pcraft:temp
+data modify storage pcraft:temp keyboardLayout set from entity @s ArmorItems[0].tag.KeyboardLayout
+
+execute store result score #keyboardLayout.length pcraft.value run data get storage pcraft:temp keyboardLayout.keys
+data modify entity @e[type=block_display,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1] block_state.Name set from storage pcraft:temp keyboardLayout.color
+
+
+# Store Item Data
+data modify entity @e[type=marker,tag=pcraft.part,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1] data.ItemData set value {id:"minecraft:armor_stand",Count:1b,tag:{display:{Name:'{"text":"Keyboard","italic":false}'},EntityTag:{Invisible:1b,Tags:["pcraft.spawn_part","pcraft.spawn_keyboard"],ArmorItems:[{},{},{},{}]}}}
+data modify entity @e[type=marker,tag=pcraft.part,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1] data.ItemData.tag.display.Lore set from entity @s ArmorItems[0].tag.ItemData.Lore
+data modify entity @e[type=marker,tag=pcraft.part,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1] data.ItemData.tag.EntityTag.ArmorItems[0] set from entity @s ArmorItems[0]
+
 
 # Summon Keys
 scoreboard players operation #x pcraft.value = #keyboard.origin.x pcraft.value

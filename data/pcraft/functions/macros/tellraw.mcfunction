@@ -1,1 +1,1 @@
-$tellraw @a $(text)
+$tellraw @a "$(text)"
