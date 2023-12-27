@@ -13,7 +13,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{EntityTag:{ArmorItems:[{id:\"minecraft:barrier\",Count:1b,tag:{ItemData:{Lore:['{\"text\":\"Green\",\"italic\":false,\"color\":\"green\"}']},KeyboardLayout:{click_sound:{sound:\"block.wooden_button.click_on\",volume:2.0f},color:\"green_terracotta\",default_key_color:\"lime\",\"text_color\":\"white\",keys:[{text:\"esc\",color:\"green\"},{text:\"1\"},{text:\"2\"},{text:\"3\"},{text:\"4\"},{text:\"5\"},{text:\"6\"},{text:\"7\"},{text:\"8\"},{text:\"9\"},{text:\"0\"},{text:\"⬅\",color:\"green\",width:20,newLine:1b},{text:\"tab\",color:\"green\",width:15},{text:\"Q\"},{text:\"W\"},{text:\"E\"},{text:\"R\"},{text:\"T\"},{text:\"Y\"},{text:\"U\"},{text:\"I\"},{text:\"O\"},{text:\"P\"},{text:\"/\",color:\"green\",width:15,newLine:1b},{text:\"caps\",color:\"green\",width:17},{text:\"A\"},{text:\"S\"},{text:\"D\"},{text:\"F\"},{text:\"G\"},{text:\"H\"},{text:\"J\"},{text:\"K\"},{text:\"L\"},{text:\"!\"},{text:\"↩\",color:\"green\",width:13,newLine:1b},{text:\"shift\",color:\"green\",width:20},{text:\"Z\"},{text:\"X\"},{text:\"C\"},{text:\"V\"},{text:\"B\"},{text:\"N\"},{text:\"M\"},{text:\",\"},{text:\".\"},{text:\"↑\",color:\"green\"},{text:\"?\",color:\"green\",newLine:1b},{text:\"ctrl\",width:15,color:\"green\"},{text:\"⌘\",width:15,color:\"green\"},{text:\"space\",color:\"green\",width:64},{text:\"fn\",color:\"green\"},{text:\"←\",color:\"green\"},{text:\"↓\",color:\"green\"},{text:\"→\",color:\"green\"}]}}},{},{},{}]}}"
+              "tag": "{EntityTag:{ArmorItems:[{id:\"minecraft:barrier\",Count:1b,tag:{ItemData:{Lore:['{\"text\":\"Green\",\"italic\":false,\"color\":\"green\"}']},KeyboardLayout:{click_sound:{sound:\"block.wooden_button.click_on\",volume:2.0f},color:\"green_terracotta\",default_key_color:\"lime_concrete\",\"text_color\":\"white\",keys:[{text:\"esc\",color:\"green_concrete\"},{text:\"1\"},{text:\"2\"},{text:\"3\"},{text:\"4\"},{text:\"5\"},{text:\"6\"},{text:\"7\"},{text:\"8\"},{text:\"9\"},{text:\"0\"},{text:\"⬅\",color:\"green_concrete\",width:20,newLine:1b},{text:\"tab\",color:\"green_concrete\",width:15},{text:\"Q\"},{text:\"W\"},{text:\"E\"},{text:\"R\"},{text:\"T\"},{text:\"Y\"},{text:\"U\"},{text:\"I\"},{text:\"O\"},{text:\"P\"},{text:\"/\",color:\"green_concrete\",width:15,newLine:1b},{text:\"caps\",color:\"green_concrete\",width:17},{text:\"A\"},{text:\"S\"},{text:\"D\"},{text:\"F\"},{text:\"G\"},{text:\"H\"},{text:\"J\"},{text:\"K\"},{text:\"L\"},{text:\"!\"},{text:\"↩\",color:\"green_concrete\",width:13,newLine:1b},{text:\"shift\",color:\"green_concrete\",width:20},{text:\"Z\"},{text:\"X\"},{text:\"C\"},{text:\"V\"},{text:\"B\"},{text:\"N\"},{text:\"M\"},{text:\",\"},{text:\".\"},{text:\"↑\",color:\"green_concrete\"},{text:\"?\",color:\"green_concrete\",newLine:1b},{text:\"ctrl\",width:15,color:\"green_concrete\"},{text:\"⌘\",width:15,color:\"green_concrete\"},{text:\"space\",color:\"green_concrete\",width:64},{text:\"fn\",color:\"green_concrete\"},{text:\"←\",color:\"green_concrete\"},{text:\"↓\",color:\"green_concrete\"},{text:\"→\",color:\"green_concrete\"}]}}},{},{},{}]}}"
             },
             {
               "function": "minecraft:set_name",
@@ -27,7 +27,7 @@
               "lore": [
                 {
                   "text": "Green",
-                  "color": "gray",
+                  "color": "green",
                   "italic": false
                 }
               ]

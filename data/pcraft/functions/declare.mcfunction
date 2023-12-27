@@ -8,3 +8,4 @@
 #declare tag pcraft.spawn_part
 #declare tag pcraft.spawn_keyboard
 #declare tag pcraft.spawn_monitor
+#declare tag pcraft.hitbox

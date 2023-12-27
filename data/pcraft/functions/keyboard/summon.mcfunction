@@ -1,5 +1,9 @@
 summon marker ^ ^ ^0.25 {Tags:["pcraft.part","pcraft.keyboard","pcraft.new"]}
 
+# Hitbox
+summon interaction ^0.27 ^ ^0.25 {Tags:["pcraft.keyboard","pcraft.new","pcraft.hitbox"],width:0.3425f,height:0.0625f}
+summon interaction ^ ^ ^0.25 {Tags:["pcraft.keyboard","pcraft.new","pcraft.hitbox"],width:0.3425f,height:0.0625f}
+summon interaction ^-0.27 ^ ^0.25 {Tags:["pcraft.keyboard","pcraft.new","pcraft.hitbox"],width:0.3425f,height:0.0625f}
 
 # Summon Keyboard
 summon block_display ^ ^ ^0.25 {Tags:["pcraft.keyboard","pcraft.new"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.43875f,0f,-0.17125f],scale:[0.8775f,0.0625f,0.3425f]}}
