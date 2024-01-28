@@ -1,0 +1,31 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:armor_stand",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{EntityTag:{Invisible:1b,Tags:[\"pcraft.entity\",\"pcraft.spawn_part\",\"pcraft.spawn_computer\"]}}"
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{EntityTag:{ArmorItems:[{id:\"minecraft:barrier\",Count:1b,tag:{LootTable:\"pcraft:computer/case\"}},{},{},{}]}}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "Case",
+                  "italic": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
