@@ -4,7 +4,7 @@ execute unless score #index pcraft.value < #keyboardLayout.length pcraft.value r
     execute store result storage pcraft:temp index int 1 run scoreboard players get #index pcraft.value
 
     # get key data
-    function pcraft:keyboard/key/get_data with storage pcraft:temp
+    function pcraft:part/keyboard/key/get_data with storage pcraft:temp
 
     # set key size
     scoreboard players operation #width pcraft.value = #keyboard.key_width pcraft.value
@@ -35,7 +35,7 @@ execute unless score #index pcraft.value < #keyboardLayout.length pcraft.value r
     execute store result storage pcraft:temp dy float 0.00001 run scoreboard players get #keyboard.key_height/2 pcraft.value
     execute store result storage pcraft:temp height float 0.00001 run scoreboard players get #height pcraft.value
     execute store result storage pcraft:temp hitbox_height float 0.00001 run scoreboard players get #hitbox_height pcraft.value
-    function pcraft:keyboard/key/summon with storage pcraft:temp
+    function pcraft:part/keyboard/key/summon with storage pcraft:temp
 
     # Add half width & padding
     scoreboard players operation #x pcraft.value += #dx pcraft.value
@@ -48,4 +48,4 @@ execute unless score #index pcraft.value < #keyboardLayout.length pcraft.value r
 
 
 scoreboard players add #index pcraft.value 1
-function pcraft:keyboard/summon_keys
+function pcraft:part/keyboard/summon_keys

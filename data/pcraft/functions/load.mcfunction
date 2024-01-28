@@ -3,7 +3,7 @@ scoreboard objectives add pcraft.ID dummy
 
 scoreboard players add #counter pcraft.ID 0
 
-function pcraft:keyboard/load
+function pcraft:part/keyboard/load
 
 # Constants
 scoreboard players set #2 pcraft.value 2

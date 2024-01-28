@@ -1,6 +1,6 @@
 # Animation
-execute as @e[type=text_display,tag=pcraft.key,tag=pcraft.current,sort=nearest,limit=1,distance=..0.001] run function pcraft:keyboard/key/animation/press
-execute as @e[type=block_display,tag=pcraft.key,tag=pcraft.current,sort=nearest,limit=1,distance=..0.001] run function pcraft:keyboard/key/animation/press
+execute as @e[type=text_display,tag=pcraft.key,tag=pcraft.current,sort=nearest,limit=1,distance=..0.001] run function pcraft:part/keyboard/key/animation/press
+execute as @e[type=block_display,tag=pcraft.key,tag=pcraft.current,sort=nearest,limit=1,distance=..0.001] run function pcraft:part/keyboard/key/animation/press
 
 # Sound
 data modify storage pcraft:temp sound set from entity @e[type=marker,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] data.ClickSound

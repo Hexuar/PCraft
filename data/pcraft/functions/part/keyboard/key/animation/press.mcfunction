@@ -3,4 +3,4 @@ execute as @s[type=block_display] run data modify entity @s transformation.scale
 execute as @s[type=text_display] run data modify entity @s transformation.translation[1] set value 0.046875f
 
 tag @s add pcraft.key.pressed
-schedule function pcraft:keyboard/key/animation/release 3t
+schedule function pcraft:part/keyboard/key/animation/release 3t

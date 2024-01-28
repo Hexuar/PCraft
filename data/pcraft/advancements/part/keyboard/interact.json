@@ -26,6 +26,6 @@
     ]
   ],
   "rewards": {
-    "function": "pcraft:keyboard/interact"
+    "function": "pcraft:part/keyboard/interact"
   }
 }

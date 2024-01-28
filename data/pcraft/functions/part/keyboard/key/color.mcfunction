@@ -4,7 +4,7 @@ execute if entity @e[type=interaction,sort=nearest,nbt={interaction:{}},tag=pcra
 # Key
 execute if score #keyboard pcraft.value matches 0 run data modify entity @e[type=block_display,tag=pcraft.key,tag=pcraft.current,sort=nearest,limit=1,distance=..0.001] block_state.Name set from entity @s Inventory[{Slot:-106b}].id
 
-function pcraft:keyboard/key/modify_data with entity @e[type=marker,tag=pcraft.key,tag=pcraft.current,sort=nearest,limit=1,distance=..0.001] data
+function pcraft:part/keyboard/key/modify_data with entity @e[type=marker,tag=pcraft.key,tag=pcraft.current,sort=nearest,limit=1,distance=..0.001] data
 
 
 # Keyboard
