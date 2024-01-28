@@ -12,4 +12,7 @@ execute if score #keyboard pcraft.value matches 1 run data modify entity @e[type
 
 execute if score #keyboard pcraft.value matches 1 run data modify entity @e[type=marker,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] data.ItemData.tag.EntityTag.ArmorItems[0].tag.KeyboardLayout.color set from entity @s Inventory[{Slot:-106b}].id
 
+
+# Lore
 data modify entity @e[type=marker,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] data.ItemData.tag.display.Lore set value ['{"text":"Custom","italic":false,"color":"gray"}']
+data modify entity @e[type=marker,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] data.ItemData.tag.EntityTag.ArmorItems[0].tag.ItemData.Lore set value ['{"text":"Custom","italic":false,"color":"gray"}']
