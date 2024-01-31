@@ -2,6 +2,7 @@
 #declare tag pcraft.keyboard
 #declare tag pcraft.mouse
 #declare tag pcraft.monitor
+#declare tag pcraft.monitor.screen
 #declare tag pcraft.key
 #declare tag pcraft.part
 #declare tag pcraft.current

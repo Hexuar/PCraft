@@ -50,7 +50,7 @@ summon block_display ^0.03125 ^ ^ {Tags:["pcraft.entity","pcraft.computer","pcra
 
 
 ## Summon Hitbox ##
-summon interaction ^ ^ ^ {Tags:["pcraft.entity","pcraft.hitbox","pcraft.new"],width:0.6875f,height:0.75f,response:1b}
+summon interaction ^ ^ ^ {Tags:["pcraft.entity","pcraft.hitbox","pcraft.new"],width:0.6875f,height:0.75f}
 summon interaction ^ ^0.0625 ^0.375 {Tags:["pcraft.entity","pcraft.hitbox","pcraft.new"],width:0.3125f,height:0.0625f,response:1b}
 
 
