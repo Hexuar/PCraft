@@ -1,4 +1,4 @@
-summon marker ^ ^ ^0.25 {Tags:["pcraft.entity","pcraft.part","pcraft.keyboard","pcraft.new"]}
+summon marker ^ ^ ^0.25 {Tags:["pcraft.entity","pcraft.part","pcraft.keyboard","pcraft.new"],CustomName:'{"text":"Keyboard"}'}
 
 # Hitbox
 summon interaction ^0.27 ^ ^0.25 {Tags:["pcraft.entity","pcraft.keyboard","pcraft.new","pcraft.hitbox"],width:0.3425f,height:0.0625f}

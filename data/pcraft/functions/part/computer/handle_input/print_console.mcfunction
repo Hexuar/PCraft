@@ -1,0 +1,1 @@
+$data modify entity @e[type=text_display,tag=console_text,sort=nearest,limit=1] text set value '$(console_text)'

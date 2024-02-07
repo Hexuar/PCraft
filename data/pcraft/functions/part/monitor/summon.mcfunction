@@ -1,4 +1,4 @@
-summon marker ^ ^ ^-0.25 {Tags:["pcraft.entity","pcraft.part","pcraft.monitor","pcraft.new"]}
+summon marker ^ ^ ^-0.25 {Tags:["pcraft.entity","pcraft.part","pcraft.monitor","pcraft.new"],CustomName:'{"text":"Monitor"}'}
 
 
 # Summon Model

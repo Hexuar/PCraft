@@ -1,0 +1,1 @@
+$data modify storage pcraft:temp ui_element.nbt.text set value '$(text)'
