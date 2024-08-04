@@ -1,3 +1,0 @@
-data modify storage pcraft:data ui_elements set value {}
-data modify storage pcraft:data ui_elements.rectangle set value {nbt:{Tags:["pcraft.ui_element","pcraft.ui_element.rectangle","pcraft.new"],text:"",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.4375f,0.21875f,0.079f],scale:[1f,1f,1f]}}}
-data modify storage pcraft:data ui_elements.text set value {nbt:{Tags:["pcraft.ui_element","pcraft.ui_element.text","pcraft.new"],background:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.4375f,0.21875f,0.079f],scale:[0.125f,0.125f,0.125f]}}}

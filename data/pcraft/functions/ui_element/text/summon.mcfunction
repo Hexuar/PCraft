@@ -1,1 +1,0 @@
-$summon text_display ^$(x) ^$(y) ^ $(nbt)

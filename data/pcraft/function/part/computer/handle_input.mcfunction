@@ -1,0 +1,1 @@
+$function pcraft:part/computer/handle_input/say with entity @s data.inputMap[$(index)]

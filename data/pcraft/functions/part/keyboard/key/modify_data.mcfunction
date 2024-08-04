@@ -1,2 +1,0 @@
-# Key
-$execute if score #keyboard pcraft.value matches 0 run data modify entity @e[type=marker,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] data.ItemData.tag.EntityTag.ArmorItems[0].tag.KeyboardLayout.keys[$(index)].color set from entity @s Inventory[{Slot:-106b}].id
