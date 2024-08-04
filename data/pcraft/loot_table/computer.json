@@ -1,31 +1,39 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:armor_stand",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{EntityTag:{Invisible:1b,Tags:[\"pcraft.entity\",\"pcraft.spawn_part\",\"pcraft.spawn_computer\"]}}"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{EntityTag:{ArmorItems:[{id:\"minecraft:barrier\",Count:1b,tag:{LootTable:\"pcraft:computer\"}},{},{},{}]}}"
-              },
-              {
-                "function": "minecraft:set_name",
-                "name": {
-                  "text": "Computer",
-                  "italic": false
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Computer",
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "Invisible": true,
+                  "Tags": ["pcraft.entity","pcraft.spawn_part","pcraft.spawn_computer"],
+                  "ArmorItems": [
+                    {
+                      "id":"minecraft:barrier",
+                      "components": {
+                        "minecraft:custom_data": {
+                          "LootTable":"pcraft:computer"
+                        }
+                      }
+                    },
+                    {},
+                    {},
+                    {}
+                  ]
                 }
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
