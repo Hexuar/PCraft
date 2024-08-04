@@ -11,7 +11,7 @@ data modify entity @e[type=block_display,tag=pcraft.keyboard,tag=pcraft.new,sort
 
 
 # Get Data
-data modify storage pcraft:temp keyboardLayout set from entity @s ArmorItems[0].tag.KeyboardLayout
+data modify storage pcraft:temp keyboardLayout set from entity @s ArmorItems[0].components.minecraft:custom_data.KeyboardLayout
 
 execute store result score #keyboardLayout.length pcraft.value run data get storage pcraft:temp keyboardLayout.keys
 data modify entity @e[type=block_display,tag=pcraft.keyboard,tag=pcraft.new,sort=nearest,limit=1] block_state.Name set from storage pcraft:temp keyboardLayout.color

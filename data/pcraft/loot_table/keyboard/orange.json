@@ -1,41 +1,54 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:armor_stand",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{EntityTag:{Invisible:1b,Tags:[\"pcraft.entity\",\"pcraft.spawn_part\",\"pcraft.spawn_keyboard\"]}}"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{EntityTag:{ArmorItems:[{id:\"minecraft:barrier\",Count:1b,tag:{ItemData:{Lore:['{\"text\":\"Orange\",\"italic\":false,\"color\":\"gold\"}']},KeyboardLayout:{click_sound:{sound:\"block.cherry_wood_button.click_on\",volume:2.0f},color:\"red_concrete\",default_key_color:\"yellow_concrete\",\"text_color\":\"white\",keys:[{text:\"esc\",color:\"orange_concrete\"},{text:\"1\"},{text:\"2\"},{text:\"3\"},{text:\"4\"},{text:\"5\"},{text:\"6\"},{text:\"7\"},{text:\"8\"},{text:\"9\"},{text:\"0\"},{text:\"⬅\",color:\"orange_concrete\",width:20,newLine:1b},{text:\"tab\",color:\"orange_concrete\",width:15},{text:\"Q\"},{text:\"W\"},{text:\"E\"},{text:\"R\"},{text:\"T\"},{text:\"Y\"},{text:\"U\"},{text:\"I\"},{text:\"O\"},{text:\"P\"},{text:\"/\",color:\"orange_concrete\",width:15,newLine:1b},{text:\"caps\",color:\"orange_concrete\",width:17},{text:\"A\"},{text:\"S\"},{text:\"D\"},{text:\"F\"},{text:\"G\"},{text:\"H\"},{text:\"J\"},{text:\"K\"},{text:\"L\"},{text:\"!\"},{text:\"↩\",color:\"orange_concrete\",width:13,newLine:1b},{text:\"shift\",color:\"orange_concrete\",width:20},{text:\"Z\"},{text:\"X\"},{text:\"C\"},{text:\"V\"},{text:\"B\"},{text:\"N\"},{text:\"M\"},{text:\",\"},{text:\".\"},{text:\"↑\",color:\"orange_concrete\"},{text:\"?\",color:\"orange_concrete\",newLine:1b},{text:\"ctrl\",width:15,color:\"orange_concrete\"},{text:\"⌘\",width:15,color:\"orange_concrete\"},{text:\"space\",color:\"orange_concrete\",width:64},{text:\"fn\",color:\"orange_concrete\"},{text:\"←\",color:\"orange_concrete\"},{text:\"↓\",color:\"orange_concrete\"},{text:\"→\",color:\"orange_concrete\"}]}}},{},{},{}]}}"
-              },
-              {
-                "function": "minecraft:set_name",
-                "name": {
-                  "text": "Keyboard",
-                  "italic": false
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Keyboard",
+                "minecraft:lore": [
+                  "{\"text\":\"Orange\",\"color\":\"gold\",\"italic\":false}"
+                ],
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "Invisible": true,
+                  "Tags": ["pcraft.entity","pcraft.spawn_part","pcraft.spawn_keyboard"],
+                  "ArmorItems": [
+                    {
+                      "id":"minecraft:barrier","components":{
+                        "minecraft:custom_data":{
+                          "ItemData":{"Lore":["{\"text\":\"Orange\",\"color\":\"gold\",\"italic\":false}"]},
+                          "KeyboardLayout":{
+                            "click_sound":{"sound":"block.cherry_wood_button.click_on","volume":2.0},
+                            "color":"red_concrete",
+                            "default_key_color":"yellow_concrete",
+                            "text_color":"white",
+                            "keys":[
+                              {"text":"esc","color":"orange_concrete"},{"text":"1"},{"text":"2"},{"text":"3"},{"text":"4"},{"text":"5"},{"text":"6"},{"text":"7"},{"text":"8"},{"text":"9"},{"text":"0"},{"text":"⬅","color":"orange_concrete","width":20,"newLine":true},
+                              {"text":"tab","color":"orange_concrete","width":15},{"text":"Q"},{"text":"W"},{"text":"E"},{"text":"R"},{"text":"T"},{"text":"Y"},{"text":"U"},{"text":"I"},{"text":"O"},{"text":"P"},{"text":"/","color":"orange_concrete","width":15,"newLine":true},
+                              {"text":"caps","color":"orange_concrete","width":17},{"text":"A"},{"text":"S"},{"text":"D"},{"text":"F"},{"text":"G"},{"text":"H"},{"text":"J"},{"text":"K"},{"text":"L"},{"text":"!"},{"text":"↩","color":"orange_concrete","width":13,"newLine":true},
+                              {"text":"shift","color":"orange_concrete","width":20},{"text":"Z"},{"text":"X"},{"text":"C"},{"text":"V"},{"text":"B"},{"text":"N"},{"text":"M"},{"text":","},{"text":"."},{"text":"↑","color":"orange_concrete"},{"text":"?","color":"orange_concrete","newLine":true},
+                              {"text":"ctrl","color":"orange_concrete","width":15},{"text":"⌘","color":"orange_concrete","width":15},{"text":"space","color":"orange_concrete","width":64},{"text":"fn","color":"orange_concrete"},{"text":"←","color":"orange_concrete"},{"text":"↓","color":"orange_concrete"},{"text":"→","color":"orange_concrete"}
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {},
+                    {},
+                    {}
+                  ]
                 }
-              },
-              {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {
-                    "text": "Orange",
-                    "color": "gold",
-                    "italic": false
-                  }
-                ]
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
