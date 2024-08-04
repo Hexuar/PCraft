@@ -24,7 +24,7 @@
                         "minecraft:custom_data":{
                           "ItemData":{"Lore":["{\"text\":\"White\",\"color\":\"white\",\"italic\":false}"]},
                           "KeyboardLayout":{
-                            "click_sound":{"sound":"ui.button.click","volume":2.0},
+                            "click_sound":{"sound":"ui.button.click","volume":1.0},
                             "color":"white_concrete",
                             "default_key_color":"white_concrete",
                             "text_color":"gray",

@@ -8,7 +8,6 @@ function pcraft:ui_element/load
 data modify storage pcraft:data chars set value {whitespace:" "}
 
 
-
 # Constants
 scoreboard players set #2 pcraft.value 2
 scoreboard players set #10 pcraft.value 10
