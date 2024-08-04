@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "Keyboard",
+                "minecraft:item_name": "{\"text\":\"Keyboard\"}",
                 "minecraft:lore": [
                   "{\"text\":\"Blue\",\"color\":\"blue\",\"italic\":false}"
                 ],
