@@ -1,8 +1,5 @@
 summon marker ^ ^ ^-0.25 {Tags:["pcraft.entity","pcraft.part","pcraft.computer","pcraft.new"],CustomName:'{"text":"Computer"}'}
 
-# Text Parser
-data modify entity @e[type=marker,tag=pcraft.computer,tag=pcraft.part,tag=pcraft.new,sort=nearest,limit=1] data.inputMap set value [{"text":"#escape"},{"text":"1"},{"text":"2"},{"text":"3"},{"text":"4"},{"text":"5"},{"text":"6"},{"text":"7"},{"text":"8"},{"text":"9"},{"text":"0"},{"text":"#backspace"},{"text":"    "},{"text":"Q"},{"text":"W"},{"text":"E"},{"text":"R"},{"text":"T"},{"text":"Y"},{"text":"U"},{"text":"I"},{"text":"O"},{"text":"P"},{"text":"/"}]
-
 ## Summon Model ##
 
 # Bottom
