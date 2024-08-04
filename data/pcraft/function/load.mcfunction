@@ -3,10 +3,6 @@ scoreboard objectives add pcraft.ID dummy
 scoreboard players add #counter pcraft.ID 0
 
 function pcraft:part/keyboard/load
-function pcraft:ui_element/load
-
-data modify storage pcraft:data chars set value {whitespace:" "}
-
 
 # Constants
 scoreboard players set #2 pcraft.value 2
