@@ -10,9 +10,9 @@ function pcraft:part/keyboard/key/modify_data with entity @e[type=marker,tag=pcr
 # Keyboard
 execute if score #keyboard pcraft.value matches 1 run data modify entity @e[type=block_display,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] block_state.Name set from entity @s Inventory[{Slot:-106b}].id
 
-execute if score #keyboard pcraft.value matches 1 run data modify entity @e[type=marker,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] data.ItemData.tag.EntityTag.ArmorItems[0].tag.KeyboardLayout.color set from entity @s Inventory[{Slot:-106b}].id
+execute if score #keyboard pcraft.value matches 1 run data modify entity @e[type=marker,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] data.ItemData.components.minecraft:entity_data.ArmorItems[0].components.minecraft:custom_data.KeyboardLayout.color set from entity @s Inventory[{Slot:-106b}].id
 
 
 # Lore
-data modify entity @e[type=marker,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] data.ItemData.tag.display.Lore set value ['{"text":"Custom","italic":false,"color":"gray"}']
-data modify entity @e[type=marker,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] data.ItemData.tag.EntityTag.ArmorItems[0].tag.ItemData.Lore set value ['{"text":"Custom","italic":false,"color":"gray"}']
+data modify entity @e[type=marker,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] data.ItemData.components.minecraft:lore set value ['{"text":"Custom","italic":false,"color":"gray"}']
+data modify entity @e[type=marker,tag=pcraft.keyboard,tag=pcraft.current,sort=nearest,limit=1] data.ItemData.components.minecraft:entity_data.ArmorItems[0].components.minecraft:custom_data.ItemData.Lore set value ['{"text":"Custom","italic":false,"color":"gray"}']
