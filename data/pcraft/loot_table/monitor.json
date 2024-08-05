@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "Monitor",
+                "minecraft:item_name": "{\"text\":\"Monitor\"}",
                 "minecraft:entity_data": {
                   "id": "minecraft:armor_stand",
                   "Invisible": true,

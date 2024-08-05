@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "Computer",
+                "minecraft:item_name": "{\"text\":\"Computer\"}",
                 "minecraft:entity_data": {
                   "id": "minecraft:armor_stand",
                   "Invisible": true,

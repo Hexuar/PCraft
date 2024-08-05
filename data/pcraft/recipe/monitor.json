@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "III",
+      "III",
+      " I "
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "id": "minecraft:armor_stand",
+      "components": {
+        "minecraft:item_name": "{\"text\":\"Monitor\"}",
+        "minecraft:entity_data": {
+          "id": "minecraft:armor_stand",
+          "Invisible": true,
+          "Tags": ["pcraft.entity","pcraft.spawn_part","pcraft.spawn_monitor"],
+          "ArmorItems": [
+            {
+              "id":"minecraft:barrier",
+              "components": {
+                "minecraft:custom_data": {
+                  "LootTable":"pcraft:monitor"
+                }
+              }
+            },
+            {},
+            {},
+            {}
+          ]
+        }
+      }
+    }
+  }
+  

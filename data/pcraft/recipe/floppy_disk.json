@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "I",
+      "P"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "P": {
+        "item": "minecraft:paper"
+      }
+    },
+    "result": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:custom_model_data": 2222000,
+        "minecraft:custom_data": "{pcraft:{floppy_disk:true}}",
+        "minecraft:item_name": "{\"text\":\"Floppy Disk\"}",
+        "minecraft:rarity": "common"
+      }
+    }
+  }
+  

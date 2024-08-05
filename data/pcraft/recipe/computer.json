@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "III",
+      "I I",
+      "III"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "id": "minecraft:armor_stand",
+      "components": {
+        "minecraft:item_name": "{\"text\":\"Computer\"}",
+        "minecraft:entity_data": {
+          "id": "minecraft:armor_stand",
+          "Invisible": true,
+          "Tags": ["pcraft.entity","pcraft.spawn_part","pcraft.spawn_computer"],
+          "ArmorItems": [
+            {
+              "id":"minecraft:barrier",
+              "components": {
+                "minecraft:custom_data": {
+                  "LootTable":"pcraft:computer"
+                }
+              }
+            },
+            {},
+            {},
+            {}
+          ]
+        }
+      }
+    }
+  }
+  
