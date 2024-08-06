@@ -1,0 +1,1 @@
+$data modify storage pcraft:temp currentUIElement set from storage pcraft:temp currentWindow.elements[$(index)]
